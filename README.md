@@ -5,8 +5,7 @@ Fine Tuning the Yolov5 object detection algorithm to automatically detect and co
 
 ![collage](https://user-images.githubusercontent.com/63201896/126937855-a686a0ca-c380-49d0-b8ad-bcf6a8961e0e.png)
 
-
-For this task I had used the SKU110 dataset. It consists of train, validation and test sets. The annotations for the images are provided as a csv file. An example of the csv file is shown below.
+For this task I had used the SKU110 dataset. It consists of train (8232 images), validation (587 images) and test (2940 images) sets. The annotations for the images are provided as a csv file. The number of bounding boxes may vary from image to image. An example of the csv file is shown below.
 
 ![annotations_example](https://user-images.githubusercontent.com/63201896/126936547-9248ea30-2853-48e3-9f65-be2a4c717543.PNG)
 
@@ -15,5 +14,10 @@ For this task I had used the SKU110 dataset. It consists of train, validation an
 * columns 4 and 5 represnt the bottom right coordinates of the bounding boxes.
 * column 6 represents the class(Since only one class, it is kept as object)
 * columns 7 and 8 represent the image widths and heights respectively.
+
+But for the yolo algorithm, we need to change the format accordingly. Roboflow.ai provides a interface where it automatically annotates and augments the iamges accordingly to the yolov5 format. Unfortunately only upto 1000 images can be annotated for free. I used only the resize option(416x416x3) in the preprocessing step. So I used the first 1000 images of the train set and splitted it into train-val-test with a 80-10-10 rule.
+
+# Methodology
+
 
 
