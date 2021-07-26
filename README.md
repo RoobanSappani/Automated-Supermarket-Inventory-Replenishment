@@ -23,9 +23,11 @@ But for the yolo algorithm, we need to change the format accordingly. Roboflow.a
 
 I used the yolov5s model configurations by only changing the number of classes to 1. Trained the model for 300 epochs and a batch size of 32. The training progress is shown below.
 
+![observations](https://user-images.githubusercontent.com/63201896/126940121-a1a9c4d1-5a21-4e41-9dd1-4695fdc60990.png)
+
 Some of the predictions are shown below.
 
-![observations](https://user-images.githubusercontent.com/63201896/126940121-a1a9c4d1-5a21-4e41-9dd1-4695fdc60990.png)
+![prediction1](https://user-images.githubusercontent.com/63201896/126941099-8d198b61-eadd-4150-9e22-5e6ca97c4fab.png)
 
 ![prediction2](https://user-images.githubusercontent.com/63201896/126940964-8f530d15-cbcb-40ed-b92b-758bd182743c.png)
 
