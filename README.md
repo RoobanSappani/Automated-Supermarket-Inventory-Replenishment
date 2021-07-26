@@ -10,8 +10,7 @@ For this task I had used the SKU110 dataset. It consists of train (8232 images),
 
 ![annotations_example](https://user-images.githubusercontent.com/63201896/126936547-9248ea30-2853-48e3-9f65-be2a4c717543.PNG)
 
-* column 1 represents the image name.![prediction1](https://user-images.githubusercontent.com/63201896/126940935-4018f536-5baf-4efa-a34e-ea2c4f7d9caf.png)
-
+* column 1 represents the image name.
 * columns 2 and 3 represnt the top left coordinates of the bounding boxes.
 * columns 4 and 5 represnt the bottom right coordinates of the bounding boxes.
 * column 6 represents the class(Since only one class, it is kept as object).
